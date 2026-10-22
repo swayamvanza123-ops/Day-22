@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-21 | Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">✦</span> StockFlow</div>
+      <p class="side-label">WORKSPACE</p>
+      <nav id="navigation">
+        <button class="nav-link active" data-page="dashboard">▦ Dashboard</button>
+        <button class="nav-link" data-page="products">▣ Products</button>
+        <button class="nav-link" data-page="categories">▤ Categories</button>
+        <button class="nav-link" data-page="suppliers">♙ Suppliers</button>
+        <button class="nav-link" data-page="sales">↗ Sales</button>
+        <button class="nav-link" data-page="stock">⇅ Stock Management</button>
+        <button class="nav-link" data-page="batches">▧ Batch Management</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="profile-avatar">SF</div>
+        <div><strong>Store Manager</strong><small>Inventory Admin</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">INVENTORY MANAGEMENT</p>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <span class="date-pill" id="today"></span>
+      </header>
+      <div id="notice" class="notice hidden" role="status"></div>
+      <section id="pageContent"></section>
+      <footer>StockFlow · Day-21 Inventory Management System</footer>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/suppliers.js"></script>
+  <script src="js/sales.js"></script>
+  <script src="js/stockManagement.js"></script>
+  <script src="js/batches.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
